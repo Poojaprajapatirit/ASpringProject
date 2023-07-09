@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean name="address" class="com.pooja.basic.bean.Address">
+   <property name="houseNo" value="7896"></property>
+   <property name="houseName" value="Mona Villa"></property>
+   <property name="pinCode" value="201204"></property>
+   </bean>
+   
+   <bean name="date" class="java.util.Date"></bean>
+   <bean name="employee" class="com.pooja.basic.bean.Employee" autowire="constructor">
+   <property name="empNo" value="101"></property>
+   <property name="empName" value="Mona"></property>
+   </bean>
+
+</beans>
